@@ -46,6 +46,8 @@ print("Your Current Battery Status:      ", Status[d.batteryGetStatus().result])
 #  6: "Failure"
 
 print("Your Current Battery Health:      ", Health[d.batteryGetHealth().result])
- print("\nCheck Power Saver Mode:\n    Need to define all processes related to Power Saver Mode\n    then print if Mode is On or Off.")
+print("\nCheck Power Saver Mode:\n    Need to define all processes related to Power Saver Mode\n    then print if Mode is On or Off.")
 
-
+print()
+d.batteryStopMonitoring()
+#end
